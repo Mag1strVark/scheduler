@@ -1,0 +1,350 @@
+.container{
+    display: flex;
+    width: 90%;
+    height: 100%;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+    /* height: 10%; */
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    gap: 16px;
+
+}
+
+.info::-webkit-scrollbar {
+    width: 8px; /* Ширина полосы прокрутки */
+}
+
+.info::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Цвет полосы прокрутки */
+    border-radius: 4px; /* Скругление углов полосы прокрутки */
+}
+
+.info:hover {
+    overflow: auto;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 18px;
+    width: 184px;
+}
+
+.elements{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
+}
+
+.element {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+
+.deadlines {
+    flex-grow: 1;
+}
+
+.element span, .label {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.element select{
+    background: url(../../../assets/img/shape.svg) no-repeat center left #FFFFFF;
+    background-size: 16px;
+    background-position-x: 10px;
+    padding-left: 24px;
+}
+
+.project select{
+    background: url(../../../assets/img/projects.svg) no-repeat center left #FFFFFF;
+    background-size: 16px;
+    background-position-x: 10px;
+    padding-left: 28px;
+}
+
+
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.important{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: 10%;
+}
+
+.unimportant{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: 20%;
+}
+
+.unimportantTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.unimportantTop button{
+    display: flex;
+    align-items: center;
+}
+
+.unimportantLists{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height: 608px;
+    overflow-y: scroll;
+}
+
+.unimportantList{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.checkLists{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height: 608px;
+    overflow-y: scroll;
+}
+
+.checklist{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: 20%;
+}
+
+.checklistTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.checklistTop button{
+    display: flex;
+    align-items: center;
+}
+
+.checkLists{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height: 608px;
+    overflow-y: scroll;
+}
+
+.checkList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    height: 22px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+}
+
+.dates{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dates span{
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 0 8px;
+    border-radius: 5px;
+    border: 1px solid #AFBAC3;
+    background: #FFF;
+    align-items: center;
+    /* width: 224px; */
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.timerElements{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.timerButtonsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.timeElements{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+}
+
+.timeSpent{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.timeSpentElements{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.timeContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+
+.timeValue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height:32px; 
+    border-radius: 5px;
+    border: 1px solid var(--basic-grey, #AFBAC3);
+    background: #FFF;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 16px;
+}
+
+.timerIcon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 24px;
+}
+
+.commentsInput{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 48px;
+}
+
+.commentsInputElements{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.commentsOutput{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.commentsOutputItem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    height: 100%;
+}
+
+.commentsOutputTitle{}
+
+.commentsOutputName{}

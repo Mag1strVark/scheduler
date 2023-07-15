@@ -1,0 +1,54 @@
+version: '3'
+services:
+    backend:
+        restart: always
+        build: ./GantBackend
+        command: python manage.py runserver 0.0.0.0:8000
+        ports:
+            - '8000:8000'
+        env_file: .env
+        depends_on:
+            mysql:
+                condition: service_healthy
+        networks:
+            - sail
+            - apps
+    frontend:
+        build:
+            context: ./GantFrontend
+            args:
+                REACT_APP_API_URL: http://localhost:80
+        ports:
+            - "80:80"
+        networks:
+            - apps
+        depends_on:
+            - backend
+    mysql:
+        image: 'mysql/mysql-server:8.0'
+        ports:
+            - '${FORWARD_DB_PORT:-3306}:3306'
+        environment:
+            MYSQL_ROOT_PASSWORD: '123456'
+            MYSQL_ROOT_HOST: '%'
+            MYSQL_DATABASE: 'kaban'
+            MYSQL_USER: 'kaban_admin'
+            MYSQL_PASSWORD: '123456'
+            MYSQL_ALLOW_EMPTY_PASSWORD: 1
+        volumes:
+            - './create_ocenka.sql:/docker-entrypoint-initdb.d/create_ocenka.sql'
+        networks:
+            - sail
+        healthcheck:
+            test:
+                - CMD
+                - mysqladmin
+                - ping
+                - '-p 123456'
+            retries: 3
+            timeout: 5s
+networks:
+    sail:
+        driver: bridge
+    apps:
+

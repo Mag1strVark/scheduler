@@ -1,0 +1,118 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    left: 0;
+    z-index: 121;
+}
+
+.collapse{
+    background-color: white;
+    position: relative;
+}
+
+.titleRow{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 80px;
+    z-index: 123;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFBAC3;
+}
+
+.titleRow span{
+    position: absolute;
+    left: 26px;
+    top: 31px;
+    color: #31393C;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.date{
+    width: 100px;
+}
+
+.tableWrapper {
+    position: sticky;
+    top: 0;
+    z-index: 7;
+}
+
+.ganttTable {
+    flex-grow: 1;
+}
+
+.fixedHeader {
+    position: sticky;
+    top: 0;
+    z-index: 120;
+}
+
+.tableHeader {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: white;
+    border-top: 1px solid #AFBAC3;
+}
+
+.tableMonth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-right: 1px solid #AFBAC3;
+    color: #31393C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.tableBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color: white;
+    border-top: 1px solid #AFBAC3;
+    border-bottom: 1px solid #AFBAC3;
+}
+
+.dateCell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+    border-right: 1px solid #AFBAC3;
+    color: #31393C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.tasksContainer {
+    width: 100%;
+    height: 100%;
+}

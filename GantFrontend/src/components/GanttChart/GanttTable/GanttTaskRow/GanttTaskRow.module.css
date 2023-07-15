@@ -1,0 +1,63 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.cellWrapper {
+    height: 42px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-right: 1px solid #afbac3;
+    border-bottom: 1px solid #afbac3;
+}
+
+.activeCellWrapper {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    position: absolute;
+    top: 4px;
+}
+
+.emptyCell {
+    background-color: white;
+}
+
+.isActiveCellOverlay {
+    z-index: 3;
+}
+
+.cellColor1 {
+    background-color: #4f89ff;
+}
+
+.cellColor2 {
+    background-color: #fab44c;
+}
+
+.ganttDateCell {
+    font-weight: bold;
+}
+
+
+.startDate{
+    background: transparent;
+    position: absolute;
+    height: 42px;
+    cursor: move;
+    z-index: 60;
+}
+
+.endDate{
+    background: transparent;
+    position: absolute;
+    height: 42px;
+    cursor: move;
+    z-index: 60;
+}

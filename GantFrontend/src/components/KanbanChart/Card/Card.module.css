@@ -1,0 +1,118 @@
+.title{
+    display: flex;
+    width: 264px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title span{
+    overflow: hidden;
+    white-space: nowrap;
+    color: #000;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-style: normal;
+    /*font-weight: 500;*/
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.team{
+    display: flex;
+    padding: 0 8px;
+    align-items: flex-start;
+    border-radius: 5px;
+    background: #FEF2E0;
+    width: 98px;
+    height: 24px;
+}
+
+.team span{
+    color: #EE7900;
+    font-size: 14px;
+    font-style: normal;
+    /*font-weight: bold;*/
+    line-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.project{
+    display: flex;
+    padding: 0 8px;
+    align-items: flex-start;
+    border-radius: 5px;
+    background: #E7EFFF;
+    width: 121px;
+    height: 24px;
+}
+
+.project span{
+    color: #2870FF;
+    font-size: 14px;
+    font-style: normal;
+    /*font-weight: bold;*/
+    line-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.user{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    flex-direction: row;
+    width: 224px;
+    height: 16px;
+}
+
+.user span{
+    width: 190px;
+    height: 16px;
+    color: #313131;
+    font-size: 14px;
+    font-style: normal;
+    /*font-weight: bold;*/
+    line-height: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.deadline{
+    display: flex;
+    width: 224px;
+    height: 24px;
+    align-items: center;
+    gap: 8px;
+}
+
+.deadline span{
+    color: #313131;
+    font-size: 14px;
+    font-style: normal;
+    /*font-weight: bold;*/
+    line-height: 24px;
+}
+
+.hovered {
+    background: #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(40, 112, 255, 0.30);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.bottom{
+    width: 100%;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
